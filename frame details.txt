@@ -1,0 +1,12 @@
+Mainframe  -----------------------
+|                                 |
+Adminframe---Transactionviewframe Participantframe
+|                                 |            |
+Edetailsframe-----------------		  Studentframe 
+|         | | |              ||                 |
+Eventframe| | |		     |Venueframe	Payment1
+|	  | | Eventviewframe |		        |
+|	  | Clubframe        Venueviewframe     Payment2
+|	  Clubviewframe
+Eventdetailsframe       
+                         

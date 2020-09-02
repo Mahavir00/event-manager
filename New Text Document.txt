@@ -1,0 +1,45 @@
+import java.util.*;
+import java.io.*;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+
+class Eventviewframe extends JFrame{
+Container c;
+
+JTextArea textArea;
+JScrollPane scroll;
+JButton b1,b2;
+
+Eventviewframe(){
+c=getContentPane();
+c.setLayout(null);
+
+textArea = new JTextArea();
+scroll = new JScrollPane(textArea);
+b1=new JButton("Back");
+b2=new JButton("View");
+
+c.add(scroll);
+c.add(b1);
+c.add(b2);
+
+scroll.setBounds(20,20,350,270);
+b1.setBounds(225,310,100,30);
+b2.setBounds(75,310,100,30);
+
+ActionListener a1=(ae)->{
+Edetailsframe a=new Edetailsframe();
+this.dispose();
+};
+b1.addActionListener(a1);
+
+
+this.setSize(400,390);
+this.setTitle("Event Registration");
+this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+this.setVisible(true);
+this.setLocationRelativeTo(null);
+}// end of const.
+}// end of EventViewframe
